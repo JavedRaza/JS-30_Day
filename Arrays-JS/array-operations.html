@@ -7,13 +7,15 @@
  
  <script >
  	var arr = ["Apple" , "Banana" , "Lemon" ,"Grapes" , "Mango"];
-//Arrays slice methods
+//Arrays slice methods return array
 		var arr1 = arr.slice(-2 , -1);
 		console.log(arr1);
-//splice
+//splice return array but can add remove elemts at any position of an Arrays
 
 	var arr2 = arr.splice(2, 2);
 	console.log(arr2);
+	console.log(arr);
+	var arrr = arr.splice(3 , 1 ,"javed" , "ahmad");
 	console.log(arr);
 
 // find only return one value of array that pass the given test case
