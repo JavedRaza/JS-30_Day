@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title></title>
+ </head>
+ <body>
+ 
+ <script >
+ 	var arr = ["Apple" , "Banana" , "Lemon" ,"Grapes" , "Mango"];
+//Arrays slice methods
+		var arr1 = arr.slice(-2 , -1);
+		console.log(arr1);
+//splice
+
+	var arr2 = arr.splice(2, 2);
+	console.log(arr2);
+	console.log(arr);
+
+// find only return one value of array that pass the given test case
+		var arr3 = [12,4,5,19,6,9,29];
+	
+	const adult = (num) =>{
+			return num>18;
+	}
+	console.log(arr3.find(adult));
+// filter   ..filter return an array that passes the given test cases
+		console.log(arr3.filter(adult));
+
+
+// Reduce methods ...gives a single value after completing a function
+
+				//just add 4 to above elemtns arr3 and returns the result
+
+				function fun4(num){
+					return num + 4;
+				}
+			var res = arr3.reduce(fun4);
+			console.log(res);
+
+//map   same as reduce but after applying give conditon after calling a function me the whole array
+		function fun5(num){
+			return num*num;
+		}
+		console.log(arr3.map(fun5));
+
+		console.log(arr3.map(Math.sqrt))
+
+
+
+
+
+ </script>
+ </body>
+ </html>
